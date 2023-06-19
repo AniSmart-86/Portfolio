@@ -137,11 +137,11 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
+    width: 3rem;
     background: transparent;
     border: 0.2rem solid var(--main-color);
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--main-color);
     margin: 3rem 2.5rem 3rem 0;
     transition: .5s ease;
@@ -164,6 +164,7 @@ span{
     color: var(--second-bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
+    margin: 0 1rem 1rem;
     transition: .5s ease;
 }
 
@@ -206,7 +207,7 @@ span{
 .container{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-gap: 2.6rem;
+gap: 1.6rem;
 align-items: center;
 }
 
@@ -216,6 +217,7 @@ align-items: center;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    width: 250px;
 }
 
 .box-img{
@@ -242,13 +244,13 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 text-align: center;
-padding: 0 4rem;
-transform: translateX(100%);
+padding: 0 3rem;
+transform: translateY(100%);
 transition: .5s ease;
 }
 
 .box-img:hover .layer{
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .layer h4{
@@ -290,7 +292,7 @@ transition: .5s ease;
 
 .project{
     background: var(--second-bg-color);
-    width: 100%;
+    /* width: 300px; */
 }
 
 .contact h2{
@@ -428,6 +430,10 @@ margin-bottom: 3rem;
         display: grid;
 grid-template-columns: repeat(2, 1fr);
     }
+
+    .container .box-img{
+        width: 100%;
+    }
     .layer h4{
         font-size: 1.8rem;
     }
@@ -441,6 +447,13 @@ grid-template-columns: repeat(2, 1fr);
     }
     .layer a i{
         font-size: 1rem;
+    }
+    .social-media a{
+        
+        /* width: 2rem; */
+        font-size: 2rem;
+        margin: 1.8rem 1.5rem 1.5rem 0;
+       
     }
 }
 
